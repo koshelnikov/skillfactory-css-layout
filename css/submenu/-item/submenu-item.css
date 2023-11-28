@@ -1,0 +1,8 @@
+.submenu__item {
+  list-style: none;
+}
+
+.submenu__item:nth-of-type(even) {
+  margin-left: 4px;
+  margin-right: 8px;
+}

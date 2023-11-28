@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/layout/layout.css">
+  <link rel="stylesheet" href="css/header/header.css">
+  <link rel="stylesheet" href="css/header/__layout/header__layout.css">
+  <link rel="stylesheet" href="css/header/__button/header__button.css">
+  <link rel="stylesheet" href="css/header/__logo/header__logo.css">
+  <link rel="stylesheet" href="css/header/__menu/header__menu.css">
+  <link rel="stylesheet" href="css/header/__menu__item/header__menu__item.css">
+  <link rel="stylesheet" href="css/header/__burger/header__burger.css">
+
+  <link rel="stylesheet" href="css/content/content.css">
+
+  <link rel="stylesheet" href="css/articles/section/section.css">
+  <link rel="stylesheet" href="css/articles/article/article.css">
+  <link rel="stylesheet" href="css/articles/article/-body/article-body.css">
+  <link rel="stylesheet" href="css/articles/article/-author/article-author.css">
+  <link rel="stylesheet" href="css/articles/article/-description/article-description.css">
+  <link rel="stylesheet" href="css/articles/article/-header/article-header.css">
+  <link rel="stylesheet" href="css/articles/article/-image/article-image.css">
+  <link rel="stylesheet" href="css/articles/article/-date/article-date.css">
+
+  <link rel="stylesheet" href="css/submenu/submenu.css">
+  <link rel="stylesheet" href="css/submenu/-item/submenu-item.css">
+  <link rel="stylesheet" href="css/submenu/-arrow/submenu-arrow.css">
+
+  <link rel="stylesheet" href="css/footer/footer.css">
+
+  <link rel="stylesheet" href="css/button/button.css">
+  <link rel="stylesheet" href="css/button/-primary/button-primary.css">
+  <link rel="stylesheet" href="css/button/-secondary/button-secondary.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <header class="header">
+    <div class="header__layout layout">
+      <img class="header__logo"  src="/img/logo.svg" alt="Блог"/>
+      <nav class="header__menu">
+        <ul>
+          <li class="header__menu__item">
+            <a href="/">О нас</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="/">Тарифы</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="/">Для бизнеса</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="/">Психологам</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="/">Сертификаты</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="/">Материалы</a>
+          </li>
+          <li class="header__menu__item">
+            <a href="/">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="button button-primary header__button">Подобрать психолога</button>
+      <button class="header__burger">
+        <img src="/img/burger.svg" alt="меню"/>
+      </button>
+    </div>
+  </header>
+  <main class="content layout">
+    <nav class="content__submenu">
+      <ul>
+        <li class="submenu__item">Главная</li>
+        <li class="submenu__item">
+          <span class="submenu__arrow">
+            <img src="/img/arrow.svg" alt="arrow"/>
+          </span>
+        </li>
+        <li class="submenu__item">Блог</li>
+      </ul>
+    </nav>
+    <section class="section">
+      <div class="article">
+        <img class="article-image" src="/img/articles/1.png" alt="Article name"/>
+        <div class="article-body">
+          <span class="article-header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article-author">Автор: Лиза Файнтух</span>
+          <span class="article-description">
+            Изначально термин «эмоциональное профессиональной сфере и относился
+            Изначально термин «эмоциональное профессиональной сфере и относился
+            Изначально термин «эмоциональное профессиональной сфере и относился
+            Изначально термин «эмоциональное профессиональной сфере и относился
+            Изначально термин «эмоциональное профессиональной сфере и относился
+          </span>
+          <span class="article-date">21.08.2021</span>
+        </div>
+      </div>
+      <div class="article">
+        <img class="article-image" src="/img/articles/2.png" alt="Article name"/>
+        <div class="article-body">
+          <span class="article-header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article-author">Автор: Лиза Файнтух</span>
+          <span class="article-description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
+          <span class="article-date">21.08.2021</span>
+        </div>
+      </div>
+    </section>
+    <!--<section>
+       <button class="button button-secondary">Ещё</button>
+    </section>-->
+  </main>
+  <footer class="footer layout"></footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

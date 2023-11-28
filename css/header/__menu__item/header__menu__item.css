@@ -1,0 +1,23 @@
+.header__menu__item {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header__menu__item > a {
+  text-decoration: none;
+}
+
+.header__menu__item > a:active {
+  color: inherit;
+}
+
+.header__menu__item:not(:first-of-type) {
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__menu__item:not(:first-of-type) {
+    margin-left: 30px;
+  }
+}
