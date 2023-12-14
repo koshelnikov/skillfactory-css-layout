@@ -1,5 +1,4 @@
 .article__image {
-  position: relative;
   object-fit: cover;
   height: 206px;
   border-top-left-radius: 16px;

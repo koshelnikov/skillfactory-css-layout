@@ -4,14 +4,28 @@
   grid-column: span 6;
 }
 
+@media screen and (min-width: 768px) {
+  .article:not(:nth-child(-1n+2)) {
+    grid-column: span 3;
+    > img {
+      height: 206px;
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .article:nth-child(-1n + 2) {
     grid-column: span 3;
   }
   .article:not(:nth-child(-1n+2)) {
     grid-column: span 2;
+    > img {
+      height: 206px;
+    }
   }
 }
+
+
 
 @media screen and (min-width: 1200px) {
 }
