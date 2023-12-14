@@ -1,4 +1,4 @@
-.article-image {
+.article__image {
   position: relative;
   object-fit: cover;
   height: 206px;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .article-image {
+  .article__image {
     height: 404px;
   }
 }
