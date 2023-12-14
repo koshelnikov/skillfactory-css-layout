@@ -1,5 +1,4 @@
 .layout {
-  font-family: 'Monseratt', sans-serif;
   display: grid;
   grid-template-columns: minmax(16px, auto) minmax(288px, 1200px) minmax(16px, auto);
   grid-template-rows: auto 1px 1fr auto;
