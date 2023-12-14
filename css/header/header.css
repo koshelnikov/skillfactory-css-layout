@@ -1,6 +1,6 @@
 .header {
+  grid-area: header;
   height: 56px;
-  box-shadow: 0px -2px 0px 0px #EFF2F2 inset;
 }
 
 

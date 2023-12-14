@@ -1,0 +1,30 @@
+.content__header {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+
+/* iPhone SE */
+@media screen and (min-width: 375px) {
+  .content__header {
+    margin-top: 32px;
+  }
+}
+
+/* iPhone 11 */
+@media screen and (min-width: 414px) {
+  .content__header {
+    font-size: 32px;
+  }
+}
+
+/* iPad min */
+@media screen and (min-width: 768px) {
+  .content__header{
+    font-size: 48px;
+  }
+}
+
+/* iPad Pro */
+@media screen and (min-width: 1024px) {  }
+

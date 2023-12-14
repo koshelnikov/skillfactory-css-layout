@@ -1,13 +1,17 @@
 .section {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 24px;
 }
 
-@media screen and (min-width: 1024px) {
-  .section {
+.section:first-of-type {
+  margin-top: 32px;
+}
 
-    flex-flow: row;
-
-  }
+.more {
+  margin-top: 36px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

@@ -3,11 +3,22 @@
  */
 * {
   color: #333;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  height: 100%;
 }
 
 body {
-  font-family: 'Monseratt', sans-serif;
+  height: 100%;
 }
 
+h1, h2 {
+  margin: 0;
+  padding: 0;
+}
 
 

@@ -1,17 +1,17 @@
 .article {
   display: flex;
   flex-flow: column;
-  width: 100%;
+  grid-column: span 6;
 }
 
 @media screen and (min-width: 1024px) {
-  .article {
-    width: 468px;
+  .article:nth-child(-1n + 2) {
+    grid-column: span 3;
+  }
+  .article:not(:nth-child(-1n+2)) {
+    grid-column: span 2;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .article {
-    width: 560px;
-  }
 }

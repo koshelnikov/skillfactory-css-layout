@@ -1,5 +1,6 @@
 .footer {
-  margin: 0 auto;
+  margin-top: 60px;
+  grid-area: footer;
   color: #fff;
   background-color: #2963A3;
 }

@@ -1,0 +1,7 @@
+.header__line {
+  grid-area: header_line;
+  border: none;
+  background-color: #EFF2F2;
+  height: 2px;
+  width: 100%;
+}
