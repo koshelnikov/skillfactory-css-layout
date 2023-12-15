@@ -19,7 +19,7 @@
 /* iPhone 11 */
 @media screen and (min-width: 414px) {
   .articles_filter {
-    overflow: hidden;
+
     flex-wrap: wrap;
     white-space: pre-wrap;
   }
