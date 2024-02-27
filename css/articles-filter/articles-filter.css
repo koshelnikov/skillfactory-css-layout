@@ -2,39 +2,18 @@
   display: flex;
   margin-top: 32px;
   gap: 8px;
-  flex-wrap: nowrap;
-  white-space: nowrap;
   overflow-x: auto;
   scrollbar-width: none;
 }
 
 
-
-
-/* iPhone SE */
-@media screen and (min-width: 375px) {
-
-}
-
 /* iPhone 11 */
 @media screen and (min-width: 414px) {
-  .articles-filter {
 
+  .articles-filter {
     flex-wrap: wrap;
-    white-space: pre-wrap;
   }
 }
-
-/* iPad min */
-@media screen and (min-width: 768px) {
-
-}
-
-/* iPad Pro */
-@media screen and (min-width: 1024px) {
-
-}
-
 
 
 
