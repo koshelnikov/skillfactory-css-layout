@@ -16,6 +16,9 @@
   /* last elements after first 2 elements */
   .article:nth-child(n+3) {
     grid-column: span 3;
+    > img {
+      height: 206px;
+    }
   }
 }
 
