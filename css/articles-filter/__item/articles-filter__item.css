@@ -1,4 +1,4 @@
-.articles__filter__item {
+.articles-filter__item {
   border-radius: 24px;
   padding: 6px 8px;
   flex-wrap: nowrap;
@@ -10,7 +10,7 @@
 
 }
 
-.articles__filter__item:hover {
+.articles-filter__item:hover {
   box-shadow: #16C8BB 0px 0px 0px 2px inset;
 }
 
