@@ -17,9 +17,6 @@
   .article:nth-child(n+3) {
     grid-template-rows: 206px 1fr;
     grid-column: span 3;
-    > img {
-      height: 206px;
-    }
   }
 }
 
