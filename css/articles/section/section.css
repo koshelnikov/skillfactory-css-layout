@@ -8,10 +8,3 @@
 .section:first-of-type {
   margin-top: 32px;
 }
-
-.more {
-  margin-top: 36px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}

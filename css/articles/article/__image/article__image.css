@@ -4,9 +4,3 @@
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
-
-@media screen and (min-width: 768px) {
-  .article__image {
-    height: 404px;
-  }
-}

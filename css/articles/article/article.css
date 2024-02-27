@@ -6,31 +6,35 @@
 
 @media screen and (min-width: 768px) {
 
-  .article:not(:nth-child(-1n+2)) {
-    grid-column: span 3;
-
+  /* first 2 elements */
+  .article:nth-child(-n+3) {
     > img {
-      height: 206px;
+      height: 404px;
     }
+  }
+
+  /* last elements after first 2 elements */
+  .article:nth-child(n+3) {
+    grid-column: span 3;
   }
 }
 
 @media screen and (min-width: 1024px) {
 
-  .article:nth-child(-1n + 2) {
+  /* first 2 elements */
+  .article:nth-child(-n+3) {
     grid-column: span 3;
-  }
-
-  .article:not(:nth-child(-1n+2)) {
-    grid-column: span 2;
 
     > img {
-      height: 206px;
+      height: 260px;
     }
   }
-}
 
-
-
-@media screen and (min-width: 1200px) {
+  /* last elements after first 2 elements */
+  .article:nth-child(n+3) {
+    grid-column: span 2;
+    > img {
+      height: 260px;
+    }
+  }
 }

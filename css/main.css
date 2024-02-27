@@ -9,11 +9,7 @@
   font-family: 'Monseratt', sans-serif;
 }
 
-:root {
-  height: 100%;
-}
-
-body {
+html, body {
   height: 100%;
 }
 

@@ -5,6 +5,6 @@
   grid-template-areas:
    ". header ."
    "header_line header_line header_line"
-   ". main ."
+   ". content ."
    "footer footer footer";
 }
