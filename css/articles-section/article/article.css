@@ -1,20 +1,21 @@
 .article {
-  display: flex;
-  flex-flow: column;
   grid-column: span 6;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 206px;
+
+  grid-template-areas:
+    "article-image"
+    "article-body";
 }
 
 @media screen and (min-width: 768px) {
-
-  /* first 2 elements */
   .article:nth-child(-n+3) {
-    > img {
-      height: 404px;
-    }
+    grid-template-rows: 404px 1fr;
   }
 
-  /* last elements after first 2 elements */
   .article:nth-child(n+3) {
+    grid-template-rows: 206px 1fr;
     grid-column: span 3;
     > img {
       height: 206px;
@@ -24,20 +25,17 @@
 
 @media screen and (min-width: 1024px) {
 
+
   /* first 2 elements */
   .article:nth-child(-n+3) {
     grid-column: span 3;
-
-    > img {
-      height: 260px;
-    }
+    grid-template-rows: 260px 1fr;
   }
 
   /* last elements after first 2 elements */
   .article:nth-child(n+3) {
     grid-column: span 2;
-    > img {
-      height: 260px;
-    }
+    grid-template-rows: 260px 1fr;
   }
+
 }

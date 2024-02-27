@@ -1,6 +1,12 @@
 .article__image {
-  object-fit: cover;
-  height: 206px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+  grid-area: article-image;
+  display: flex;
+  width: 100%;
+  > img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
 }
