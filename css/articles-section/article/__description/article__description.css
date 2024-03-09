@@ -1,0 +1,7 @@
+.article__description {
+  margin-top: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: calc(2em + 5px);
+}

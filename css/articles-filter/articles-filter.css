@@ -1,0 +1,20 @@
+.articles-filter {
+  display: flex;
+  margin-top: 32px;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+
+/* iPhone 11 */
+@media screen and (min-width: 414px) {
+
+  .articles-filter {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+

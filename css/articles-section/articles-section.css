@@ -1,0 +1,10 @@
+.articles-section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 24px;
+}
+
+.articles-section:first-of-type {
+  margin-top: 32px;
+}

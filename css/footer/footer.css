@@ -1,5 +1,17 @@
 .footer {
-  margin: 0 auto;
-  color: #fff;
+  grid-area: footer;
   background-color: #2963A3;
+  display: grid;
+  grid-template-columns: minmax(16px, auto) minmax(288px, 1200px) minmax(16px, auto);
+  grid-template-areas: '. footer .';
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+.footer > * {
+  color: #fff;
+}
+
+.footer > div {
+  grid-area: footer;
 }

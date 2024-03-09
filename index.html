@@ -3,65 +3,58 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>YouTalk Blog</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/layout/layout.css">
+
   <link rel="stylesheet" href="css/header/header.css">
   <link rel="stylesheet" href="css/header/__layout/header__layout.css">
   <link rel="stylesheet" href="css/header/__button/header__button.css">
   <link rel="stylesheet" href="css/header/__logo/header__logo.css">
   <link rel="stylesheet" href="css/header/__menu/header__menu.css">
-  <link rel="stylesheet" href="css/header/__menu__item/header__menu__item.css">
+  <link rel="stylesheet" href="css/header/__menu/__menu__item/header__menu__item.css">
   <link rel="stylesheet" href="css/header/__burger/header__burger.css">
 
+  <link rel="stylesheet" href="css/header-line/header-line.css">
+
   <link rel="stylesheet" href="css/content/content.css">
+  <link rel="stylesheet" href="css/content/__header/content__header.css">
+  <link rel="stylesheet" href="css/content/__more/content__more.css">
 
-  <link rel="stylesheet" href="css/articles/section/section.css">
-  <link rel="stylesheet" href="css/articles/article/article.css">
-  <link rel="stylesheet" href="css/articles/article/-body/article-body.css">
-  <link rel="stylesheet" href="css/articles/article/-author/article-author.css">
-  <link rel="stylesheet" href="css/articles/article/-description/article-description.css">
-  <link rel="stylesheet" href="css/articles/article/-header/article-header.css">
-  <link rel="stylesheet" href="css/articles/article/-image/article-image.css">
-  <link rel="stylesheet" href="css/articles/article/-date/article-date.css">
+  <link rel="stylesheet" href="css/articles-filter/articles-filter.css">
+  <link rel="stylesheet" href="css/articles-filter/__item/articles-filter__item.css">
+  <link rel="stylesheet" href="css/articles-filter/__item/-selected/articles-filter__item-selected.css">
 
-  <link rel="stylesheet" href="css/submenu/submenu.css">
-  <link rel="stylesheet" href="css/submenu/-item/submenu-item.css">
-  <link rel="stylesheet" href="css/submenu/-arrow/submenu-arrow.css">
+  <link rel="stylesheet" href="css/articles-section/articles-section.css">
+  <link rel="stylesheet" href="css/articles-section/article/article.css">
+  <link rel="stylesheet" href="css/articles-section/article/__body/article__body.css">
+  <link rel="stylesheet" href="css/articles-section/article/__author/article__author.css">
+  <link rel="stylesheet" href="css/articles-section/article/__description/article__description.css">
+  <link rel="stylesheet" href="css/articles-section/article/__header/article__header.css">
+  <link rel="stylesheet" href="css/articles-section/article/__image/article__image.css">
+  <link rel="stylesheet" href="css/articles-section/article/__date/article__date.css">
+
+  <link rel="stylesheet" href="css/breadcrumb/breadcrumb.css">
+  <link rel="stylesheet" href="css/breadcrumb/__item/breadcrumb__item.css">
 
   <link rel="stylesheet" href="css/footer/footer.css">
 
   <link rel="stylesheet" href="css/button/button.css">
-  <link rel="stylesheet" href="css/button/-primary/button-primary.css">
-  <link rel="stylesheet" href="css/button/-secondary/button-secondary.css">
+  <link rel="stylesheet" href="css/button/_primary/button_primary.css">
+  <link rel="stylesheet" href="css/button/_secondary/button_secondary.css">
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-
-  <!-- Add your site or application content here -->
+<body class="layout">
   <header class="header">
-    <div class="header__layout layout">
+    <div class="header__layout">
       <img class="header__logo"  src="/img/logo.svg" alt="Блог"/>
       <nav class="header__menu">
         <ul>
@@ -89,55 +82,127 @@
         </ul>
       </nav>
 
-      <button class="button button-primary header__button">Подобрать психолога</button>
+      <button class="button button_primary header__button">Подобрать психолога</button>
       <button class="header__burger">
         <img src="/img/burger.svg" alt="меню"/>
       </button>
     </div>
   </header>
-  <main class="content layout">
-    <nav class="content__submenu">
+  <div class="header-line"></div>
+  <main class="content">
+    <nav class="breadcrumb">
       <ul>
-        <li class="submenu__item">Главная</li>
-        <li class="submenu__item">
-          <span class="submenu__arrow">
-            <img src="/img/arrow.svg" alt="arrow"/>
-          </span>
-        </li>
-        <li class="submenu__item">Блог</li>
+        <li class="breadcrumb__item"><span>Главная</span></li>
+        <li class="breadcrumb__item"><span>Блог</span></li>
       </ul>
     </nav>
-    <section class="section">
+    <h1 class="content__header">Блог</h1>
+    <div class="articles-filter">
+      <span class="articles-filter__item articles-filter__item-selected">
+        Все
+      </span>
+      <span class="articles-filter__item">Самооценка и самопринятие</span>
+      <span class="articles-filter__item">Чувства и эмоции</span>
+      <span class="articles-filter__item">Тревога</span>
+      <span class="articles-filter__item">Упражнения</span>
+      <span class="articles-filter__item">Личное здоровье</span>
+      <span class="articles-filter__item">Психология питания</span>
+
+    </div>
+    <section class="articles-section">
       <div class="article">
-        <img class="article-image" src="/img/articles/1.png" alt="Article name"/>
-        <div class="article-body">
-          <span class="article-header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
-          <span class="article-author">Автор: Лиза Файнтух</span>
-          <span class="article-description">
+        <div class="article__image">
+          <img src="/img/articles/1.png" alt="Article name"/>
+        </div>
+        <div class="article__body">
+          <span class="article__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article__author">Автор: Лиза Файнтух</span>
+          <span class="article__description">
             Изначально термин «эмоциональное профессиональной сфере и относился
             Изначально термин «эмоциональное профессиональной сфере и относился
             Изначально термин «эмоциональное профессиональной сфере и относился
             Изначально термин «эмоциональное профессиональной сфере и относился
             Изначально термин «эмоциональное профессиональной сфере и относился
           </span>
-          <span class="article-date">21.08.2021</span>
+          <span class="article__date">21.08.2021</span>
         </div>
       </div>
       <div class="article">
-        <img class="article-image" src="/img/articles/2.png" alt="Article name"/>
-        <div class="article-body">
-          <span class="article-header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
-          <span class="article-author">Автор: Лиза Файнтух</span>
-          <span class="article-description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
-          <span class="article-date">21.08.2021</span>
+        <div class="article__image">
+          <img src="/img/articles/2.png" alt="Article name"/>
+        </div>
+        <div class="article__body">
+          <span class="article__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article__author">Автор: Лиза Файнтух</span>
+          <span class="article__description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
+          <span class="article__date">21.08.2021</span>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__image">
+          <img src="/img/articles/2.png" alt="Article name"/>
+        </div>
+        <div class="article__body">
+          <span class="article__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article__author">Автор: Лиза Файнтух</span>
+          <span class="article__description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
+          <span class="article__date">21.08.2021</span>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__image">
+          <img src="/img/articles/2.png" alt="Article name"/>
+        </div>
+        <div class="article__body">
+          <span class="article__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article__author">Автор: Лиза Файнтух</span>
+          <span class="article__description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
+          <span class="article__date">21.08.2021</span>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__image">
+          <img src="/img/articles/2.png" alt="Article name"/>
+        </div>
+        <div class="article__body">
+          <span class="article__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article__author">Автор: Лиза Файнтух</span>
+          <span class="article__description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
+          <span class="article__date">21.08.2021</span>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__image">
+          <img src="/img/articles/2.png" alt="Article name"/>
+        </div>
+        <div class="article__body">
+          <span class="article__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article__author">Автор: Лиза Файнтух</span>
+          <span class="article__description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
+          <span class="article__date">21.08.2021</span>
+        </div>
+      </div>
+      <div class="article">
+        <div class="article__image">
+          <img src="/img/articles/2.png" alt="Article name"/>
+        </div>
+        <div class="article__body">
+          <span class="article__header">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</span>
+          <span class="article__author">Автор: Лиза Файнтух</span>
+          <span class="article__description">Изначально термин «эмоциональное профессиональной сфере и относился</span>
+          <span class="article__date">21.08.2021</span>
         </div>
       </div>
     </section>
-    <!--<section>
-       <button class="button button-secondary">Ещё</button>
-    </section>-->
+
+    <div class="content__more">
+      <button class="button button_secondary">Ещё</button>
+    </div>
+
   </main>
-  <footer class="footer layout"></footer>
+  <footer class="footer">
+    <div>Footer</div>
+  </footer>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

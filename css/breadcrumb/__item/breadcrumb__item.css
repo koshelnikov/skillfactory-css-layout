@@ -1,0 +1,22 @@
+.breadcrumb__item {
+  list-style: none;
+  color: #333333B2;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.breadcrumb__item::after {
+  content: ' ';
+  background-image: url('/img/arrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}
+
+.breadcrumb__item:nth-of-type(even) {
+  margin-left: 8px;
+}

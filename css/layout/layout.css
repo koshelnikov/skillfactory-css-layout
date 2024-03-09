@@ -1,27 +1,10 @@
 .layout {
-  max-width: 1200px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-/* iPhone SE */
-@media screen and (min-width: 375px) {
-
-}
-
-/* iPhone 11 */
-@media screen and (min-width: 414px) {
-}
-
-/* iPad min */
-@media screen and (min-width: 768px) {
-
-}
-
-/* iPad Pro */
-@media screen and (min-width: 1024px) {
-  .layout {
-    padding-right: 32px;
-    padding-left: 32px;
-  }
+  display: grid;
+  grid-template-columns: minmax(16px, auto) minmax(288px, 1200px) minmax(16px, auto);
+  grid-template-rows: auto 1px 1fr auto;
+  grid-template-areas:
+   ". header ."
+   "header_line header_line header_line"
+   ". content ."
+   "footer footer footer";
 }
