@@ -1,7 +1,6 @@
 .header__menu {
   display: none;
   margin-left: 32px;
-  flex: 1;
 }
 
 .header__menu > ul {
@@ -12,6 +11,7 @@
 
 @media screen and (min-width: 1024px) {
   .header__menu {
-    display: block;
+    display: flex;
+    flex: 1;
   }
 }
